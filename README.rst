@@ -30,9 +30,13 @@ Definitely. Just let me know what you have in mind and we'll make it work!
 Here's a few examples to get you started. The main 2 (and only 2) functions right now are TBS (TheBestSpinner) API and my madlib function (superspin/nested spin).
 
 	# Evaluate spintax article
+
 	require 'contentbofu'
+
 	bofu = ContentBofu.new
+
 	puts bofu.madlib("{I|You|We} Write {Content|Words|Sentences}")
+
 	# I Write Content / We Write Sentences / We Write Words / You Write Sentences / etc.
 
 
