@@ -1,6 +1,7 @@
 ContentBofu
 =========
 **What is ContentBofu?**
+
 ContentBofu is basically a collaboration of tools that I've re-written or plan to re-write for use in my projects in Ruby/Rails. Most are based around content spinning/creation/etc.
 
 **What can it do?**
