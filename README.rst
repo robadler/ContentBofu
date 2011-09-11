@@ -4,6 +4,10 @@ ContentBofu
 
 ContentBofu is basically a collaboration of tools that I've re-written or plan to re-write for use in my projects in Ruby/Rails. Most are based around content spinning/creation/etc.
 
+**Does it require any other libraries/gems?**
+
+If you're using the TheBestSpinner aspect of it, yes. I utilize mechanize and a gem called 'php-serialize'.
+
 **What can it do?**
 
 It can spin content using synonyms from TheBestSpinner (which I ported their PHP API over to Ruby), and supports "superspin" or "nested spins"
