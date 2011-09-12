@@ -20,11 +20,6 @@ It can spin content using synonyms from TheBestSpinner (which I ported their PHP
 Hit me up on Twitter (@Bofu2U) and I'll try to help out any way I can.
 
 
-**Can I contribute?**
-
-Definitely. Just let me know what you have in mind and we'll make it work!
-
-
 **Example uses?**
 
 Here's a few examples to get you started. The main 2 (and only 2) functions right now are TBS (TheBestSpinner) API and my madlib function (superspin/nested spin).
@@ -60,6 +55,6 @@ And for TBS, make sure you set your settings before use.
 
 
 
-Hit me up on Twitter (@Bofu2U) if you have any questions/comments, etc.
+Hit me up on Twitter (@Bofu2U) if you want to get in contact.
 
 -Bofu2U
