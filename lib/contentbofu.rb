@@ -10,10 +10,12 @@ class ContentBofu
 	def madlib(body)
 
 		# Replaces {}, {|},{|||||||||}, etc
-		body.gsub!(/(\{\}|\{\|*\})/,'')
+		output = body.gsub(/(\{\}|\{\|*\})/,'')
+		#srand(Time.now.nsec + rand(999999999999999))	
+	
 
 		while true do 
-			vars = body.scan(/\{[^\{\}]+?\}/)
+			vars = output.scan(/\{[^\{\}]+?\}/)
 
 			if vars.count == 0
 		            # No more madlib eval's, break out
@@ -24,12 +26,12 @@ class ContentBofu
 			# Evaluate the spintax on the run
 			vars.each do |ind|
 		   		parts = ind.gsub(/(\{|\})/,'').split(/\|/)
-		   		body.gsub!(ind,parts[rand(parts.size)])
+		   		output = output.gsub(ind,parts[rand(parts.size)])
 			end
 
 		end
 
-		return body
+		return output
 
 	end
 
