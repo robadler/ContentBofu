@@ -188,8 +188,8 @@ class ContentBofu
   def wai_spin(body)
 
     require 'rubygems'
-		require 'mechanize'
-		require 'php_serialize'
+    require 'mechanize'
+    require 'php_serialize'
 
     if (@wai_user == nil) || (@wai_pass == nil) || (@wai_slider == nil) || (body == nil)
       raise "You have not set your username (@wai_user), password (@wai_pass), slider value (@wai_slider) or Body."
