@@ -88,9 +88,9 @@ class ContentBofu
     return @wai_user
   end
 
-	def wai_user=(value)
-		@wai_user = value
-	end
+  def wai_user=(value)
+    @wai_user = value
+  end
 
 
 	# WordAI Password Definition & Setting
@@ -98,45 +98,45 @@ class ContentBofu
     return @wai_pass
   end
 
-	def wai_pass=(value)
-		@wai_pass = value
-	end
+  def wai_pass=(value)
+  	@wai_pass = value
+  end
 
   # WordAI Slider Value
   def wai_slider
     return @wai_slider
   end
 
-	def wai_slider=(value)
-		@wai_slider = value
-	end
+  def wai_slider=(value)
+  	@wai_slider = value
+  end
 
   # WordAI Protected Words (no spaces, separated by commas)
   def wai_protected
     return @wai_protected
   end
 
-	def wai_protected=(value)
-		@wai_protected = value
-	end
+  def wai_protected=(value)
+  	@wai_protected = value
+  end
 
   # WordAI Speed Value (on = no nested)
   def wai_speed
     return @wai_speed
   end
 
-	def wai_speed=(value)
-		@wai_speed = value
-	end
+  def wai_speed=(value)
+  	@wai_speed = value
+  end
 
   # WordAI No Original Setting - on = Do NOT return original word back.
   def wai_nooriginal
     return @wai_nooriginal
   end
 
-	def wai_nooriginal=(value)
-		@wai_nooriginal = value
-	end
+  def wai_nooriginal=(value)
+  	@wai_nooriginal = value
+  end
 
 	# TBS Spin
 	def tbs_spin(body)
@@ -192,8 +192,8 @@ class ContentBofu
 		require 'php_serialize'
 
     if (@wai_user == nil) || (@wai_pass == nil) || (@wai_slider == nil) || (body == nil)
-			raise "You have not set your username (@wai_user), password (@wai_pass), slider value (@wai_slider) or Body."
-		end
+      raise "You have not set your username (@wai_user), password (@wai_pass), slider value (@wai_slider) or Body."
+    end
 
     agent = Mechanize.new
 
@@ -210,11 +210,11 @@ class ContentBofu
     data['nooriginal'] = @wai_nooriginal if @wai_nooriginal != nil
 
 
-    # Post & Get Result
-		spin_return = agent.post(api_url,data).content
+  # Post & Get Result
+  spin_return = agent.post(api_url,data).content
 
-		# Return (still in spintax, NOT evaluated)
-	  return spin_return
+  # Return (still in spintax, NOT evaluated)
+  return spin_return
 
 
   end
