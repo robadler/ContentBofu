@@ -12,7 +12,7 @@ If you're using the TheBestSpinner aspect of it, yes. I utilize mechanize and a 
 
 **What can it do?**
 
-It can spin content using synonyms from TheBestSpinner (which I ported their PHP API over to Ruby), and supports "superspin" or "nested spins"
+It can spin content using synonyms from TheBestSpinner, WordAI, and supports "superspin" or "nested spins"
 
 
 **How do I get support?**
@@ -53,6 +53,24 @@ And for TBS, make sure you set your settings before use.
 
 	# {After|Following|Right after|Soon after|Immediately after|Just after|When|Once} finishing up on this code, I would like to get a reply with some other {ways|methods|techniques|approaches|strategies|tactics|means|options} to phrase this sentence.
 
+
+For WordAI:
+
+	# Run a sentence through WordAI
+
+	require 'contentbofu'
+
+	bofu = ContentBofu.new
+
+	bofu.wai_user = "email@address.com"
+
+	bofu.wai_pass = "secrets"
+
+	bofu.wai_slider = "50"
+
+	puts bofu.wai_spin("After finishing up on this code, I would like to get a reply with some other ways to phrase this sentence.")
+
+	# After finishing {up on|through to} this {code|signal|rule}, {I would|I'd} {like to|prefer to|want to} get {a reply|a response|an answer} with {some other|various other} {ways to|methods to|approaches to} phrase this {sentence|word}.
 
 
 Hit me up on Twitter (@Bofu2U) if you want to get in contact.
