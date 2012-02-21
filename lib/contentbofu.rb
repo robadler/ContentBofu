@@ -37,13 +37,13 @@ class ContentBofu
 
 
 	# TBS User Definition & Setting
-	def tbs_user
+  def tbs_user
     return @tbs_user
   end
 
-	def tbs_user=(value)
-		@tbs_user = value
-	end
+  def tbs_user=(value)
+    @tbs_user = value
+  end
 
 
 	# TBS Password Definition & Setting
@@ -51,19 +51,19 @@ class ContentBofu
     return @tbs_pass
   end
 
-	def tbs_pass=(value)
-		@tbs_pass = value
-	end
+  def tbs_pass=(value)
+    @tbs_pass = value
+  end
 
 
 	# TBS Method Definition & Setting
-	def tbs_method
-		return @tbs_method
-	end
+  def tbs_method
+    return @tbs_method
+  end
 
-	def tbs_method=(value)
-		@tbs_method = value
-	end
+  def tbs_method=(value)
+    @tbs_method = value
+  end
 
   # TBS Quality Definition & Setting - Quality only applies for the method replaceEveryonesFavorites
   def tbs_quality
