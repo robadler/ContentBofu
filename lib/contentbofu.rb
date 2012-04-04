@@ -196,6 +196,8 @@ class ContentBofu
 
     agent = Mechanize.new
 
+    agent.read_timeout = 600
+
     api_url = "http://beta.wordai.com/spinit.php"
 
     data = Hash.new
